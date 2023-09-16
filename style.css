@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+} 
+
+body {
+    background-color: #143F6B;
+    margin: 0;
+ 
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 991px;
+}
+
+.white {
+    width: 300px;
+    height: 300px;
+    background-image: url(notes/Malphite.jpg);
+    background-size: contain;
+    background-color: black;
+    border: 2px solid #333;
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px #333;
+    padding-top: 250px;
+    color: #F1916D;
+}
+
+.white.active {
+    background-size: 130%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    border-top: 1px solid #E5E5E5;
+    padding-top: 20px;
+    color: #E5E5E5;
+    box-shadow: 1px 1px 6px 0px #E5E5E5;
+}
+
+.fa-brands {
+    position: relative;
+    color: #E5E5E5;
+    width: 4em;
+    height: 4em;
+    top: 2.8em;
+}
+
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
